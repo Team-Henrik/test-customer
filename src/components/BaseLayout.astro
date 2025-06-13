@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+const { pageTitle } = Astro.props;
+const mainTitle = 'Test';
+const favicon = '/favicon.svg';
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href={favicon} />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{mainTitle} | {pageTitle}</title>
+  </head>
+  <body>
+    <header></header>
+    <slot />
+    <footer></footer>
+  </body>
+</html>
