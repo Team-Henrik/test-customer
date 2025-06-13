@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+nav a {
+  @apply py-1 px-2 rounded-lg hover:bg-slate-300 hover:shadow-2xl
+}
